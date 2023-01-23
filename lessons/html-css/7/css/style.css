@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.server{
+    width: 87%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+}
+.server .col{
+    width: 29%;
+    height: 250px;
+    background-color: red;
+}
+
+@media (max-width: 992px) {
+    .server{
+        justify-content: space-around;
+    }
+    .server.col{
+        width: 48%;
+    }
+}
+
+@media (max-width: 500px) {
+    .server.col{
+        width: 100%;
+    }
+}

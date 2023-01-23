@@ -1,0 +1,24 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(179,179,184,1) 0%, rgba(7,52,106,1) 44%, rgba(166,0,255,1) 78%);
+}
+p{
+    font-size: 22px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 50px;
+    margin: 10px;
+}
+
+#generate{
+    border: none;
+    padding: 20px;
+    background-color: gray;
+    color: #000;
+    border-radius: 20px;
+}

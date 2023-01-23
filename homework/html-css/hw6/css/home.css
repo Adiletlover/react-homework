@@ -1,0 +1,115 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: rgb(255,22,22);
+    background: linear-gradient(93deg, rgba(255,22,22,1) 4%, rgba(255,97,39,1) 36%, rgba(255,150,51,1) 81%, rgba(255,239,0,1) 99%);
+}
+
+header .header{
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+header .header a{
+    margin:20px ;
+    margin-right: 50px;
+    font-size: large;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header .header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+}
+
+.server {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 140px;
+    
+}
+
+.server .first {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    align-items: flex-start;
+    overflow: hidden;    
+}
+.server .second {
+    width: 400px;
+    height: 245px;
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    overflow: hidden;    
+}
+.server .third {
+    width: 400px;
+    height: 245px;
+    margin: 10px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    overflow: hidden;    
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    transition: 0.3s all linear;
+}
+
+.first h1{
+    width: 560px;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    top: 525px;
+    left: 80px;
+}
+.first img:hover {
+    transform:scale(1.4);
+}
+.second h1{
+    width: 600px;
+    font-size: 20px;
+    top: 270px;
+    left: 530px;
+    text-align: center;
+    position: absolute;
+}
+.second img:hover {
+    transform:scale(1.4);
+}
+
+.third h1{
+    width: 600px;
+    text-align: center;
+    position: absolute;
+    font-size: 20px;
+    top: 525px;
+    left: 530px;
+}
+.third img:hover {
+    transform: scale(1.3);
+}

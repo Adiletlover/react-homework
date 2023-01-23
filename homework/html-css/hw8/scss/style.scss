@@ -1,0 +1,140 @@
+@import"./constants.scss";
+@import"./mixins.scss";
+@import"./reset.scss";
+
+
+/* =====================
+        HEADER
+ =====================*/
+
+
+.header{
+    width: 100vw;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+.navigation{
+    @include flex-block(space-between, 100% );
+    padding-top: 15px;
+    .navbar{
+        @include flex-block(space-around, 45% );
+        margin-right: 200px;   
+    }
+    .navbar li{
+        margin-top: 10px;
+    }
+    .logo{
+        margin: 0 auto;
+        margin-left: 150px;   
+        color: $black;
+        font-size: 30px;
+    }
+    .fontLogo{
+        @include flex-block(space-evenly, 35% );
+    }
+}
+
+
+/* =====================
+        SECTION
+========================*/
+
+
+.server{
+    margin: 0 auto;
+    margin-top: 90px;
+    height: 450px;
+    @include flex-block(space-evenly, 87% );
+    row-gap: 20px;
+}
+
+.cms{
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0  7px gray; 
+    border-bottom: 10px solid #fff;
+    border-radius: 20px; 
+    border-bottom-color: rgb(136, 0, 255);
+}
+
+.server h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: $black;
+}
+.server i{
+    margin-top: 20px;
+    color: $black;
+    font-size: 50px;
+}
+.server .text{
+    margin-top: 70px;
+    color: $black;
+}
+.server .view{
+    margin-top: 105px;
+    color: $black;
+    font-weight: 700;
+}
+
+
+/* =====================
+        BLOCK
+========================*/
+.cms{
+    transition: 0.2s all linear;
+}
+
+.cms .top{
+    transition: 0.3s all linear;
+}
+
+.cms:hover {
+    transform:  translate(0, -40px);
+}
+
+/* =====================
+        ANIMATION
+========================*/
+@media (max-width: 992px) {
+    .server{
+        justify-content: space-around;
+        flex-wrap: wrap !important;
+    }
+    .cms{
+        width: 38% !important;
+    }
+    .navbar a{
+        margin-right: 10px;
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+}
+
+@media (max-width: 750px) {
+    .server{
+        flex-wrap: wrap !important;
+    }
+    .cms{
+        width: 60% !important;
+    }
+    .navbar a{
+        margin: 6px;
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+    .fontLogo{
+        position: relative;
+        left: 10px;
+    }
+}

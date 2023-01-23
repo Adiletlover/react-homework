@@ -1,0 +1,5 @@
+@mixin flex-block($space , $width) {
+    display: flex;
+    justify-content: $space;
+    width: $width;
+}

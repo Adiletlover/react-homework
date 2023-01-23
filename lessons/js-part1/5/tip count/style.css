@@ -1,0 +1,11 @@
+#tip-amount {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+}
+#tip-amount.show {
+    visibility: visible;
+}

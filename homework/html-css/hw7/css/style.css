@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+ul li{
+    list-style: none;
+}
+
+img{
+    object-fit: cover;
+}
+
+/* =====================
+        HEADER
+ =====================*/
+
+
+.header{
+    width: 100vw;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    width: 45%;
+    margin-right: 200px;   
+}
+.navbar li{
+    margin-top: 10px;
+}
+.logo{
+    margin: 0 auto;
+    margin-left: 150px;   
+    color: #000;
+    font-size: 30px;
+}
+.fontLogo{
+    display: flex;
+    justify-content:space-evenly;
+    width: 35%;
+}
+
+/* =====================
+        SECTION
+========================*/
+
+
+.server{
+    width: 87%;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.cms{
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0  7px gray; 
+    border-bottom: 10px solid #fff;
+    border-radius: 20px; 
+    border-bottom-color: rgb(136, 0, 255);
+    
+}
+
+.server h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000;
+}
+.server i{
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+.server .text{
+    margin-top: 70px;
+    color: #000;
+}
+.server .view{
+    margin-top: 105px;
+    color: #000;
+    font-weight: 700;
+}
+
+
+/* =====================
+        BLOCK
+========================*/
+.cms{
+    transition: 0.2s all linear;
+}
+
+.cms .top{
+    transition: 0.3s all linear;
+}
+
+.cms:hover {
+    transform:  translate(0, -40px);
+}
+
+/* =====================
+        ANIMATION
+========================*/
+@media (max-width: 992px) {
+    .server{
+        justify-content: space-around;
+        flex-wrap: wrap !important;
+    }
+    .cms{
+        width: 38% !important;
+    }
+    .navbar a{
+        margin-right: 10px;
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+}
+
+@media (max-width: 750px) {
+    .server{
+        flex-wrap: wrap !important;
+    }
+    .cms{
+        width: 60% !important;
+    }
+    .navbar a{
+        margin: 6px;
+    }
+    .logo h1{
+        position: relative;
+        right: 120px;
+    }
+    .fontLogo{
+        position: relative;
+        left: 10px;
+    }
+}
